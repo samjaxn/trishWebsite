@@ -6,11 +6,19 @@
   top: 20vh;
   left: 0;
   overflow-x: hidden;
-  background-color: aqua;
 }
 
-.verticalLine {
+.verticalLineWhite {
   border-left: 1px solid #F4F1EA;
+  mix-blend-mode: darken;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 3em;
+}
+
+.verticalLineBlack {
+  border-left: 1px solid #020202;
   mix-blend-mode: darken;
   height: 100vh;
   position: fixed;
@@ -86,6 +94,7 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
+  overflow-y: hidden;
 }
 
 /* Styling of overlay */

@@ -21,13 +21,20 @@ const SideBar = (props) => {
         }
     }
 
+    const isMenuOpen = (state) => {
+        console.log(`is menu open: ${state.isOpen}`)
+        setMenu(state.isOpen)
+        return state.isOpen
+    }
+
     return (
         <div>
             <BurgerMenu
             isOpen={menuOpen}
+            onStateChange={isMenuOpen}
             customBurgerIcon={<img src={burgerIcon} />}/>
             <div className="sideMenu">
-                <div className="verticalLine" />
+                <div className={(menuOpen) ? "verticalLineBlack" : "verticalLineWhite"} />
                 {/* <div onClick={()=> burgerClick()}class="bm-burger-button" /> */}
             </div>
         </div>

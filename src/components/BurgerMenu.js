@@ -16,6 +16,7 @@ const BurgerMenu = (props) => {
         <div>
             <Menu
             styles={ styles }
+            disableAutoFocus
             customCrossIcon={ <img src={crossIcon} /> }
             width={'100vw'}
             {...props}>
