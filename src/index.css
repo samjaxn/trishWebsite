@@ -1,10 +1,31 @@
+@font-face {
+  font-family: 'GeneraleStation';
+  src: url("./fonts/GeneraleStation-Extended.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ArialNova';
+  src: url("./fonts/ArialNova.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ArialNova';
+  src: url("./fonts/ArialNova-Italic.ttf");
+  font-style: italic;
+  font-weight: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: ArialNova;
+  color: #F4F1EA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #020202;
 }
 
 code {
