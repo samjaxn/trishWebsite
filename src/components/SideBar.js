@@ -9,16 +9,6 @@ const SideBar = (props) => {
 
     const burgerClick = () => {
         setMenu(!menuOpen)
-        //changeBurgerIcon()
-    }
-
-    const changeBurgerIcon = () => {
-        if(menuOpen){
-            setBurgerIcon(blackBurgerIcon)
-        }
-        else{
-            setBurgerIcon(whiteBurgerIcon)
-        }
     }
 
     const isMenuOpen = (state) => {
@@ -32,10 +22,13 @@ const SideBar = (props) => {
             <BurgerMenu
             isOpen={menuOpen}
             onStateChange={isMenuOpen}
-            customBurgerIcon={<img src={burgerIcon} />}/>
+            customBurgerIcon={<div />}/>
             <div className="sideMenu">
-                <div className={(menuOpen) ? "verticalLineBlack" : "verticalLineWhite"} />
-                {/* <div onClick={()=> burgerClick()}class="bm-burger-button" /> */}
+                <img src={burgerIcon} onClick={() => burgerClick()} className="bm-burger-button"/>
+                <div className={"verticalLine"} />
+                <div className="sideTitle">
+                    <p>TRISH ROQUE</p>
+                </div>
             </div>
         </div>
     )

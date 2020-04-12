@@ -6,8 +6,8 @@ var styles = {
     bmCrossButton: {
         height: '6vw',
         width: '6vw',
-        top: '1em',
-        right: '2em',
+        top: '2.5vw',
+        right: '2.5vw',
     }
 }
 
