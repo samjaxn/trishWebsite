@@ -36,10 +36,12 @@ const SideBar = (props) => {
                 </div>
                 <div className="horizontalLine" style={{top: '80vh'}} />
                 <div className="bottomMenu">
-                    <a>BE</a>
-                    <a>IN</a>
-                    <a>TW</a>
-                    <a>YT</a>
+                    <div className="bottomLinks">
+                        <a>BE</a>
+                        <a>IN</a>
+                        <a>TW</a>
+                        <a>YT</a>
+                    </div>
                 </div>
             </div>
         </div>

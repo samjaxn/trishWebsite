@@ -46,18 +46,17 @@
 .bottomMenu {
   position: fixed;
   background: green;
-  top: 80vh;
+  top: 82vh;
   left: 0;
-  height: 20vh;
+  height: 16vh;
   width: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   
 }
 
 .bottomLinks {
   display: flex;
   justify-content: space-between;
+  font-size: 1.5vh
 }
 
 .verticalLine {
@@ -115,13 +114,17 @@
   cursor: pointer;
 }
 
+.bm-cross-button {
+  outline: none;
+}
+
 .bm-item {
   /* Our sidebar item styling */
   text-decoration: none;
   color: #020202;
   transition: color 0.8s;
   margin: 0;
-  
+  outline: none;
 }
 
 /* Change color on hover */
@@ -150,4 +153,8 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.App {
+  
 }
