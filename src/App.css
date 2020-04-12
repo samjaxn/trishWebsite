@@ -54,11 +54,17 @@
   color: inherit;
   font-size: 7vw;
   line-height: 6.5vw;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+    1px 1px 0 #000;
   /* background-color: navy; */
 }
 
 .menuLabel:hover {
-  color: white;
+  color: #F4F1EA;
+  cursor: pointer;
 }
 
 /* BURGER MENU STYLES */
@@ -76,7 +82,7 @@
   /* Our sidebar item styling */
   text-decoration: none;
   color: #020202;
-  transition: color 0.3s;
+  transition: color 0.8s;
   margin: 0;
   
 }
