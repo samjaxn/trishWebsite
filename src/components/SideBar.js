@@ -24,10 +24,22 @@ const SideBar = (props) => {
             onStateChange={isMenuOpen}
             customBurgerIcon={<div />}/>
             <div className="sideMenu">
-                <img src={burgerIcon} onClick={() => burgerClick()} className="bm-burger-button"/>
-                <div className={"verticalLine"} />
-                <div className="sideTitle">
-                    <p>TRISH ROQUE</p>
+                <div className="verticalLine" />
+                <div className="topMenu">
+                    <img src={burgerIcon} onClick={() => burgerClick()} className="bm-burger-button"/>
+                </div>
+                <div className="horizontalLine" style={{top: '20vh'}} />
+                <div className="middleMenu">
+                    <div className="sideTitle">
+                        <p>TRISH ROQUE</p>
+                    </div>
+                </div>
+                <div className="horizontalLine" style={{top: '80vh'}} />
+                <div className="bottomMenu">
+                    <a>BE</a>
+                    <a>IN</a>
+                    <a>TW</a>
+                    <a>YT</a>
                 </div>
             </div>
         </div>

@@ -22,12 +22,42 @@
 .sideTitle {
   font-family: GeneraleStation;
   font-size: 1.5vh;
-  left: 1.5rem;
   /* background: navy; */
 }
 
-.center {
-    
+.topMenu {
+  position: fixed;
+  background: navy;
+  top: 0;
+  left: 0;
+  height: 20vh;
+  width: 3rem;
+}
+
+.middleMenu {
+  position: fixed;
+  background: orange;
+  top: 20vh;
+  left: 0;
+  height: 60vh;
+  width: 3rem;
+}
+
+.bottomMenu {
+  position: fixed;
+  background: green;
+  top: 80vh;
+  left: 0;
+  height: 20vh;
+  width: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+}
+
+.bottomLinks {
+  display: flex;
+  justify-content: space-between;
 }
 
 .verticalLine {
@@ -36,6 +66,13 @@
   position: fixed;
   top: 0;
   left: 3rem;
+}
+
+.horizontalLine {
+  border-top: 1px solid #F4F1EA;
+  width: 3rem;
+  position: fixed;
+  left: 0;
 }
 
 .sideMenuFooter {
@@ -71,10 +108,10 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1rem;
+  height: 1rem;
   left: 1rem;
-  top: 10vh;
+  top: 9.5vh;
   cursor: pointer;
 }
 
