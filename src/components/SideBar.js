@@ -17,6 +17,13 @@ const SideBar = (props) => {
         return state.isOpen
     }
 
+    const openLink = (clicked) => {
+        switch(clicked){
+            case 'trish':
+
+        }
+    }
+
     return (
         <div>
             <BurgerMenu
@@ -29,18 +36,31 @@ const SideBar = (props) => {
                     <img src={burgerIcon} onClick={() => burgerClick()} className="bm-burger-button"/>
                 </div>
                 <div className="horizontalLine" style={{top: '20vh'}} />
-                <div className="middleMenu">
-                    <div className="sideTitle">
-                        <p>TRISH ROQUE</p>
+                <div className="middleMenu middleText">
+                    TRISHROQUE
+                    <span className="sideTitle">
+                        <a>TRISH ROQUE</a>
+                    </span>
+                    <span>
+                        TORONTO
+                    </span>
+                    {/* <span>
+                    <div>
+                        TRISHROQUE
                     </div>
+                    
+                    <div>
+                        TORONTO
+                    </div>
+                    </span> */}
                 </div>
                 <div className="horizontalLine" style={{top: '80vh'}} />
                 <div className="bottomMenu">
                     <div className="bottomLinks">
-                        <a>BE</a>
-                        <a>IN</a>
-                        <a>TW</a>
-                        <a>YT</a>
+                        <a href="https://www.behance.net/patriciaro63c0/" target="_blank">BE</a>
+                        <a href="https://www.instagram.com/trishroque_/" target="_blank">IN</a>
+                        <a href="https://twitter.com/trishroque__" target="_blank">TW</a>
+                        <a href="https://www.youtube.com/user/haipatron" target="_blank">YT</a>
                     </div>
                 </div>
             </div>
