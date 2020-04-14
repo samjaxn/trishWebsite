@@ -17,12 +17,12 @@ const SideBar = (props) => {
         return state.isOpen
     }
 
-    const openLink = (clicked) => {
-        switch(clicked){
-            case 'trish':
+    // const openLink = (clicked) => {
+    //     switch(clicked){
+    //         case 'trish':
 
-        }
-    }
+    //     }
+    // }
 
     return (
         <div>
@@ -44,15 +44,6 @@ const SideBar = (props) => {
                     <span>
                         TORONTO
                     </span>
-                    {/* <span>
-                    <div>
-                        TRISHROQUE
-                    </div>
-                    
-                    <div>
-                        TORONTO
-                    </div>
-                    </span> */}
                 </div>
                 <div className="horizontalLine" style={{top: '80vh'}} />
                 <div className="bottomMenu">

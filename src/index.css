@@ -25,6 +25,7 @@ body {
   color: #F4F1EA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
   background-color: #020202;
   overflow: hidden;
 }

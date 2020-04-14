@@ -1,7 +1,25 @@
-.main {
+.container {
   margin-top: 0;
-  margin-left: 3rem;
+  margin-left: calc(3rem + 1px);
+  height: 100vh;
+  overflow-x: scroll;
+  padding: 3vh;
+}
+
+#container {
+}
+
+.invertColors {
   position: fixed;
+  top: 2vh;
+  right: 2vw;
+  cursor: pointer;
+}
+
+.tinyText {
+  font-family: ArialNova;
+  font-style: italic;
+  font-size: 1.5vh;
 }
 
 .sideMenu {
@@ -22,6 +40,12 @@
 .sideTitle {
   font-family: GeneraleStation;
   font-size: 1.5vh;
+}
+
+.titleFont {
+  font-family: GeneraleStation;
+  font-size: 15vh;
+  line-height: 14vh;
 }
 
 .topMenu {
