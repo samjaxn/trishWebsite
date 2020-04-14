@@ -17,12 +17,14 @@ const SideBar = (props) => {
         return state.isOpen
     }
 
-    // const openLink = (clicked) => {
-    //     switch(clicked){
-    //         case 'trish':
-
-    //     }
-    // }
+    const trishClick = () => {
+        document.getElementById('container').scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        })
+        setMenu(false)
+    }
 
     return (
         <div>
@@ -38,7 +40,7 @@ const SideBar = (props) => {
                 <div className="horizontalLine" style={{top: '20vh'}} />
                 <div className="middleMenu middleText">
                     TRISHROQUE
-                    <span className="sideTitle">
+                    <span className="sideTitle" onClick={trishClick}>
                         <a>TRISH ROQUE</a>
                     </span>
                     <span>

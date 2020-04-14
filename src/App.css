@@ -9,6 +9,33 @@
 #container {
 }
 
+.work {
+  position: absolute;
+  left: 350vh;
+  top: 17vh;
+}
+
+.workElem {
+  display: flex;
+}
+
+.workElemTitle {
+  font-family: ArialNova Light;
+  font-size: 10vh;
+  line-height: 8vh;
+  margin: 0;
+}
+
+.workImage {
+  max-width:50vw;
+  max-height:50vh;
+  width: auto;
+  height: auto;
+  transition: opacity 0.5s;
+  position: fixed;
+  z-index: -1;
+}
+
 .invertColors {
   position: fixed;
   top: 2vh;
@@ -19,7 +46,7 @@
 .tinyText {
   font-family: ArialNova;
   font-style: italic;
-  font-size: 1.5vh;
+  font-size: 1.7vh;
 }
 
 .sideMenu {
@@ -40,12 +67,56 @@
 .sideTitle {
   font-family: GeneraleStation;
   font-size: 1.5vh;
+  cursor: pointer;
+  
 }
 
 .titleFont {
   font-family: GeneraleStation;
-  font-size: 15vh;
-  line-height: 14vh;
+  font-size: 13vh;
+  line-height: 12vh;
+}
+
+.trishRoque {
+  position: absolute;
+  left: 115vh;
+  bottom: 4vh;
+}
+.scrollLine {
+  border-top: 1px solid #F4F1EA;
+  width: 158vh;
+  position: absolute;
+  top: 4vh;
+  left: 2vh;
+}
+
+.scrollDot {
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: #F4F1EA;
+  position: absolute;
+  top: calc(4vh - 1px);
+}
+
+.arrow {
+  position: absolute;
+  width: 4vh;
+  top: 0.9vh;
+}
+
+.trishTitle {
+  white-space: nowrap;
+  direction: rtl;
+  padding-left: 15vh;
+}
+
+.trishDescription {
+  direction: rtl;
+  font-size: 2vh;
+  font-family: ArialNova Light;
+  padding-right: 1vh;
+  padding-bottom: 2vh;
 }
 
 .topMenu {

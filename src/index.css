@@ -19,6 +19,13 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'ArialNova Light';
+  src: url("./fonts/ArialNova-Light.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   font-family: ArialNova;
