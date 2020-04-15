@@ -3,7 +3,7 @@ import SideBar from './SideBar'
 import Title from './Title'
 import TrishRoque from './TrishRoque'
 import InvertColors from './InvertColors'
-import Work from './Work'
+import WorkMenu from './WorkMenu'
 
 const Main = () => {
     const onWheel = (event) => {
@@ -23,7 +23,7 @@ const Main = () => {
                     <InvertColors />
                     <Title />
                     <TrishRoque />
-                    <Work />
+                    <WorkMenu />
                 </div>
             </div>
         </div>
