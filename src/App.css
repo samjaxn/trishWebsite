@@ -9,14 +9,19 @@
 #container {
 }
 
-.work {
+.workMenu {
   position: absolute;
   left: 350vh;
   top: 17vh;
 }
 
-.workElem {
-  display: flex;
+.work {
+  padding: 2vh;
+  padding-top: 0;
+}
+
+.workElemNumber {
+  display: inline-block;
 }
 
 .workElemTitle {
@@ -31,7 +36,7 @@
   max-height:50vh;
   width: auto;
   height: auto;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in-out;
   position: fixed;
   z-index: -1;
 }
@@ -100,10 +105,15 @@
 }
 
 .arrow {
-  position: absolute;
   width: 4vh;
   top: 0.9vh;
 }
+
+/* .arrow {
+  position: absolute;
+  width: 4vh;
+  top: 0.9vh;
+} */
 
 .trishTitle {
   white-space: nowrap;
