@@ -11,8 +11,12 @@
 
 .workMenu {
   position: absolute;
-  left: 350vh;
-  top: 17vh;
+  left: 258vh;
+  top: 18vh;
+  height: 25vh;
+  width: calc(100vw - 3rem);
+  border-left: 1px solid #F4F1EA;
+  background: navy;
 }
 
 .work {
@@ -26,8 +30,8 @@
 
 .workElemTitle {
   font-family: ArialNova Light;
-  font-size: 10vh;
-  line-height: 8vh;
+  font-size: 8vh;
+  line-height: 6vh;
   margin: 0;
 }
 
