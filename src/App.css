@@ -2,20 +2,21 @@
   margin-top: 0;
   margin-left: calc(3rem + 1px);
   height: 100vh;
+  width: calc(110vw - 3rem);
   overflow-x: scroll;
-  padding: 3vh;
+  scrollbar-width: none;
+  padding-left: 3vh;
 }
 
-#container {
+.horiztonalScroll {
+
 }
 
 .workMenu {
   position: absolute;
-  left: 258vh;
-  top: 18vh;
-  height: 25vh;
   width: calc(100vw - 3rem);
-  border-left: 1px solid #F4F1EA;
+  top: 18vh;
+  left: calc(3rem + 1px);
   background: navy;
 }
 
@@ -71,6 +72,15 @@
   text-orientation: mixed;
   white-space: nowrap;
   /* background: aqua; */
+}
+
+.sideMenuBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  /* background: #020202; */
+  background: navy;
 }
 
 .sideTitle {
