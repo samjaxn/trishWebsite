@@ -18,12 +18,7 @@ const SideBar = (props) => {
     }
 
     const trishClick = () => {
-        document.getElementById('container').scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-        })
-        setMenu(false)
+        //change to incorporate new scrolling
     }
 
     return (
@@ -57,6 +52,7 @@ const SideBar = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="sideMenuBackground" />
         </div>
     )
 }

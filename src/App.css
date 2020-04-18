@@ -14,10 +14,23 @@
 
 .workMenu {
   position: absolute;
+  height: 23vh;
   width: calc(100vw - 3rem);
   top: 18vh;
   left: calc(3rem + 1px);
-  background: navy;
+  /* background: navy; */
+}
+
+.workRow {
+  position: absolute;
+}
+
+.topRow {
+  top: 0;
+}
+
+.bottomRow {
+  bottom: 0;
 }
 
 .work {
@@ -78,9 +91,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 3rem;
-  /* background: #020202; */
-  background: navy;
+  width: calc(3rem + 1px);
+  height: 100vh;
+  z-index: 3;
+  background: #020202;
 }
 
 .sideTitle {

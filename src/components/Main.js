@@ -7,35 +7,42 @@ import WorkMenu from './WorkMenu'
 
 const Main = () => {
     const [horizontalScroll, setHorizontalScroll] = useState(0)
-    const [menuScroll, setMenuScroll] = useState(0)
+    const [menuScroll, setMenuScroll] = useState(-113)
 
     const onWheel = (event) => {
         event.preventDefault()
+
+        const maxMenuScroll = (window.innerWidth)/(window.innerHeight/100)
+        // const menuScrollVal = (window.innerWidth/5)/(window.innerHeight/100)
+        const menuScrollVal = 26
+
         if(event.deltaY < 0){ //scrollup
-            if(menuScroll > 0){
-                setMenuScroll(menuScroll - 30)
-                console.log("menuScrollDown")
+            if(menuScroll > -113){
+                setMenuScroll(menuScroll - menuScrollVal)
+                if(menuScroll <= (-113 + 4*menuScrollVal)){
+                    setHorizontalScroll(horizontalScroll + 26)
+                }
             }
             else {
                 if(horizontalScroll < 0){
-                    setHorizontalScroll(horizontalScroll + 30) 
+                    setHorizontalScroll(horizontalScroll + 26) 
                 }
             }
         }
         else{
             if(horizontalScroll > -360){
-                setHorizontalScroll(horizontalScroll - 30)
+                setHorizontalScroll(horizontalScroll - 26)
+                if(horizontalScroll <= -260){
+                    console.log('scroll')
+                    setMenuScroll(menuScroll + menuScrollVal)
+                }
             }
             else{
-                setMenuScroll(menuScroll + 30)
-                console.log("menuScrollUp")
+                if(menuScroll < maxMenuScroll){
+                    setMenuScroll(menuScroll + menuScrollVal)
+                }                
             }
         }
-        //console.log(scrollDistance)
-        // let container = document.getElementById('container')
-
-        // container.style.scrollBehavior = 'smooth'
-        // container.scrollLeft += scrollDistance
     }
 
     return (
@@ -48,7 +55,7 @@ const Main = () => {
                     <TrishRoque />
                     
                 </div>
-                <WorkMenu />
+                <WorkMenu scroll={menuScroll}/>
             </div>
         </div>
     )
