@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import BurgerMenu from "./BurgerMenu"
 import whiteBurgerIcon from "../SVGs/whiteBurgerIcon.svg"
-import blackBurgerIcon from "../SVGs/burgerIcon.svg"
 
 const SideBar = (props) => {
     const [menuOpen, setMenu] = useState(false)
@@ -19,6 +18,8 @@ const SideBar = (props) => {
 
     const trishClick = () => {
         //change to incorporate new scrolling
+        props.goHome()
+        setMenu(false)
     }
 
     return (

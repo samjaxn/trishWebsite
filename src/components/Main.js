@@ -33,7 +33,6 @@ const Main = () => {
             if(horizontalScroll > -360){
                 setHorizontalScroll(horizontalScroll - 26)
                 if(horizontalScroll <= -260){
-                    console.log('scroll')
                     setMenuScroll(menuScroll + menuScrollVal)
                 }
             }
@@ -45,9 +44,14 @@ const Main = () => {
         }
     }
 
+    const homePos = () => {
+        setHorizontalScroll(0)
+        setMenuScroll(-113)
+    }
+
     return (
         <div>
-            <SideBar />
+            <SideBar goHome={homePos}/>
             <div className="container" onWheel={onWheel}>
                 <div style={{position: 'relative', height: '100%', left: `${horizontalScroll}vh`, transition: 'left 0.25s' }}>
                     <InvertColors />
