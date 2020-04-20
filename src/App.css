@@ -8,16 +8,40 @@
   padding-left: 3vh;
 }
 
-.horiztonalScroll {
+.aboutPage {
+  position: absolute;
+  top: 0;
+  left: calc(3rem + 1px);
+  /* left: 100vw; */
+  height: 100vh;
+  width: calc(100vw - 3rem);
+  /* background:#020202; */
+  /* padding: 3vh; */
+  background: navy;
+}
 
+.profilePic {
+  max-width:50vw;
+  max-height:50vh;
+  width: auto;
+  height: auto;
+}
+
+.aboutTitle {
+  position: absolute;
+  font-family: LostaMasta-Light;
+  font-size: 12vw;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
 }
 
 .workMenu {
   position: absolute;
-  height: 23vh;
-  width: calc(100vw - 3rem);
   top: 18vh;
   left: calc(3rem + 1px);
+  height: 23vh;
+  width: calc(100vw - 3rem);
   /* background: navy; */
 }
 
@@ -64,6 +88,7 @@
   top: 2vh;
   right: 2vw;
   cursor: pointer;
+  z-index: 2;
 }
 
 .tinyText {
@@ -98,16 +123,16 @@
 }
 
 .sideTitle {
-  font-family: GeneraleStation;
-  font-size: 1.5vh;
+  font-family: LostaMasta-Light;
+  font-size: 2.5vh;
   cursor: pointer;
   
 }
 
 .titleFont {
-  font-family: GeneraleStation;
-  font-size: 13vh;
-  line-height: 12vh;
+  font-family: LostaMasta-Light;
+  font-size: 20vh;
+  line-height: 16vh;
 }
 
 .trishRoque {
@@ -117,7 +142,7 @@
 }
 .scrollLine {
   border-top: 1px solid #F4F1EA;
-  width: 158vh;
+  width: 76vh;
   position: absolute;
   top: 4vh;
   left: 2vh;

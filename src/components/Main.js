@@ -4,6 +4,7 @@ import Title from './Title'
 import TrishRoque from './TrishRoque'
 import InvertColors from './InvertColors'
 import WorkMenu from './WorkMenu'
+import About from './About'
 
 const Main = () => {
     const [horizontalScroll, setHorizontalScroll] = useState(0)
@@ -13,26 +14,25 @@ const Main = () => {
         event.preventDefault()
 
         const maxMenuScroll = (window.innerWidth)/(window.innerHeight/100)
-        // const menuScrollVal = (window.innerWidth/5)/(window.innerHeight/100)
         const menuScrollVal = 26
 
         if(event.deltaY < 0){ //scrollup
             if(menuScroll > -113){
                 setMenuScroll(menuScroll - menuScrollVal)
                 if(menuScroll <= (-113 + 4*menuScrollVal)){
-                    setHorizontalScroll(horizontalScroll + 26)
+                    setHorizontalScroll(horizontalScroll + menuScrollVal)
                 }
             }
             else {
                 if(horizontalScroll < 0){
-                    setHorizontalScroll(horizontalScroll + 26) 
+                    setHorizontalScroll(horizontalScroll + menuScrollVal) 
                 }
             }
         }
         else{
-            if(horizontalScroll > -360){
-                setHorizontalScroll(horizontalScroll - 26)
-                if(horizontalScroll <= -260){
+            if(horizontalScroll > (-11 * menuScrollVal)){
+                setHorizontalScroll(horizontalScroll - menuScrollVal)
+                if(horizontalScroll <= (-7 * menuScrollVal)){
                     setMenuScroll(menuScroll + menuScrollVal)
                 }
             }
@@ -57,10 +57,10 @@ const Main = () => {
                     <InvertColors />
                     <Title />
                     <TrishRoque />
-                    
                 </div>
                 <WorkMenu scroll={menuScroll}/>
             </div>
+            {/* <About /> */}
         </div>
     )
 }
