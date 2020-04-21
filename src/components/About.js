@@ -4,8 +4,13 @@ import profilePic from '../content/aboutPic.jpg'
 const About = (props) => {
     return (
         <div className="aboutPage">
-            <div>
-                <img src={profilePic} className="profilePic"/>
+            <div className="aboutContent">
+                <div className="aboutDesc">
+                    Trish Roque is a multidisciplinary designer and artist based in Toronto. Her practice is focused on the influence of designed environment on human physiological response.
+                </div>
+                <div>
+                    <img src={profilePic} className="profilePic"/>
+                </div>
             </div>
             <div className="aboutTitle">
                 ABOUT

@@ -21,18 +21,29 @@
 }
 
 .profilePic {
-  max-width:50vw;
   max-height:50vh;
   width: auto;
   height: auto;
+  padding-top: 3vh;
+}
+
+.aboutDesc {
+  font-size: 1.7vh;
+  width: 35vh;
+}
+
+.aboutContent {
+  padding: 8.5vh 5vh 5vh;
 }
 
 .aboutTitle {
   position: absolute;
   font-family: LostaMasta-Light;
-  font-size: 12vw;
-  text-align: center;
+  font-size: 24vmin;
+  line-height: 22vmin;
+  text-align: left;
   width: 100%;
+  padding-left: 2vw;
   bottom: 0;
 }
 
@@ -68,8 +79,8 @@
 
 .workElemTitle {
   font-family: ArialNova Light;
-  font-size: 8vh;
-  line-height: 6vh;
+  font-size: 8vmin;
+  line-height: 6vmin;
   margin: 0;
 }
 
@@ -131,8 +142,8 @@
 
 .titleFont {
   font-family: LostaMasta-Light;
-  font-size: 20vh;
-  line-height: 16vh;
+  font-size: 20vmin;
+  line-height: 16vmin;
 }
 
 .trishRoque {
@@ -142,10 +153,10 @@
 }
 .scrollLine {
   border-top: 1px solid #F4F1EA;
-  width: 76vh;
+  width: 76vmin;
   position: absolute;
-  top: 4vh;
-  left: 2vh;
+  top: 4vmin;
+  left: 2vmin;
 }
 
 .scrollDot {
@@ -154,7 +165,7 @@
   border-radius: 50%;
   background-color: #F4F1EA;
   position: absolute;
-  top: calc(4vh - 1px);
+  top: calc(4vmin - 1px);
 }
 
 .arrow {
@@ -176,7 +187,7 @@
 
 .trishDescription {
   direction: rtl;
-  font-size: 2vh;
+  font-size: 2vmin;
   font-family: ArialNova Light;
   padding-right: 1vh;
   padding-bottom: 2vh;

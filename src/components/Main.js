@@ -19,7 +19,7 @@ const Main = () => {
         if(event.deltaY < 0){ //scrollup
             if(menuScroll > -113){
                 setMenuScroll(menuScroll - menuScrollVal)
-                if(menuScroll <= (-113 + 4*menuScrollVal)){
+                if(menuScroll <= (-113 + 5*menuScrollVal)){
                     setHorizontalScroll(horizontalScroll + menuScrollVal)
                 }
             }
@@ -32,7 +32,7 @@ const Main = () => {
         else{
             if(horizontalScroll > (-11 * menuScrollVal)){
                 setHorizontalScroll(horizontalScroll - menuScrollVal)
-                if(horizontalScroll <= (-7 * menuScrollVal)){
+                if(horizontalScroll <= (-6 * menuScrollVal)){
                     setMenuScroll(menuScroll + menuScrollVal)
                 }
             }
@@ -60,7 +60,7 @@ const Main = () => {
                 </div>
                 <WorkMenu scroll={menuScroll}/>
             </div>
-            {/* <About /> */}
+            <About />
         </div>
     )
 }
