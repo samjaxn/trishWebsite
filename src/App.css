@@ -27,6 +27,11 @@
   padding-top: 3vh;
 }
 
+.aboutWork {
+  padding: 9vh;
+  background: purple;
+}
+
 .aboutDesc {
   font-size: 1.7vh;
   width: 35vh;
@@ -34,6 +39,9 @@
 
 .aboutContent {
   padding: 8.5vh 5vh 5vh;
+  display: flex;
+  flex-flow: row wrap;
+  background: green;
 }
 
 .aboutTitle {
