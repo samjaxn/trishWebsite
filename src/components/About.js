@@ -10,7 +10,39 @@ const About = (props) => {
                     <img src={profilePic} className="profilePic"/>
                 </div>
                 <div className="aboutWork">
-                    testing
+                    <div className="aboutColumn1">
+                        ELSEWHERE
+                        <div className="tab section">
+                            t@trishroque.co<br/>
+                            instagram@trishroque_<br/>
+                            twitter @trishroque_
+                        </div>
+                        RECENTLY:
+                        <div className="section">
+                            SONY<br/>
+                            RAPTORS<br/>
+                            HXOUSE<br/>
+                            TWITTER<br/>
+                            WESTBANK<br/>
+                            CLUEP<br/>
+                            REAL SPORTS<br/>
+                            ANDRAS<br/>
+                            STACK
+                        </div>
+                    </div>
+                    <div className="aboutColumn2">
+                        PRESS
+                        <div className="tab section">
+                            daily hive<br/>
+                            dezeen<br/>
+                            archdaily
+                        </div>
+                        SPEAKING/MENTORING
+                        <div className="section">
+                            Nuit Talks<br/>
+                            HXOUSE 1-day challenges
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="aboutTitle">

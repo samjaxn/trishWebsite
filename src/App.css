@@ -28,8 +28,22 @@
 }
 
 .aboutWork {
-  padding: 9vh;
-  background: purple;
+  padding: 3vh;
+  padding-top: 6vh;
+  display: flex;
+  /* flex-flow: row wrap; */
+  font-size: 1.7vh;
+  /* background: purple; */
+}
+
+.aboutColumn1 {
+  padding: 3vh;
+  /* background: orange; */
+}
+
+.aboutColumn2 {
+  padding: 3vh;
+  /* background: red; */
 }
 
 .aboutDesc {
@@ -40,7 +54,6 @@
 .aboutContent {
   padding: 8.5vh 5vh 5vh;
   display: flex;
-  flex-flow: row wrap;
   background: green;
 }
 
@@ -333,6 +346,15 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.tab {
+  padding-left: 2.5vh;
+}
+
+.section {
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
 }
 
 .App {
