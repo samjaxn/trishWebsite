@@ -2,21 +2,91 @@
   margin-top: 0;
   margin-left: calc(3rem + 1px);
   height: 100vh;
+  width: calc(110vw - 3rem);
   overflow-x: scroll;
-  padding: 3vh;
+  scrollbar-width: none;
+  padding-left: 3vh;
 }
 
-#container {
+.aboutPage {
+  position: absolute;
+  top: 0;
+  left: calc(3rem + 1px);
+  /* left: 100vw; */
+  height: 100vh;
+  width: calc(100vw - 3rem);
+  /* background:#020202; */
+  /* padding: 3vh; */
+  background: navy;
+}
+
+.profilePic {
+  max-height:50vh;
+  width: auto;
+  height: auto;
+  padding-top: 3vh;
+}
+
+.aboutWork {
+  padding: 3vh;
+  padding-top: 6vh;
+  display: flex;
+  /* flex-flow: row wrap; */
+  font-size: 1.7vh;
+  /* background: purple; */
+}
+
+.aboutColumn1 {
+  padding: 3vh;
+  /* background: orange; */
+}
+
+.aboutColumn2 {
+  padding: 3vh;
+  /* background: red; */
+}
+
+.aboutDesc {
+  font-size: 1.7vh;
+  width: 35vh;
+}
+
+.aboutContent {
+  padding: 8.5vh 5vh 5vh;
+  display: flex;
+  background: green;
+}
+
+.aboutTitle {
+  position: absolute;
+  font-family: LostaMasta-Light;
+  font-size: 24vmin;
+  line-height: 22vmin;
+  text-align: left;
+  width: 100%;
+  padding-left: 2vw;
+  bottom: 0;
 }
 
 .workMenu {
   position: absolute;
-  left: 258vh;
   top: 18vh;
-  height: 25vh;
+  left: calc(3rem + 1px);
+  height: 23vh;
   width: calc(100vw - 3rem);
-  border-left: 1px solid #F4F1EA;
-  background: navy;
+  /* background: navy; */
+}
+
+.workRow {
+  position: absolute;
+}
+
+.topRow {
+  top: 0;
+}
+
+.bottomRow {
+  bottom: 0;
 }
 
 .work {
@@ -30,8 +100,8 @@
 
 .workElemTitle {
   font-family: ArialNova Light;
-  font-size: 8vh;
-  line-height: 6vh;
+  font-size: 8vmin;
+  line-height: 6vmin;
   margin: 0;
 }
 
@@ -50,6 +120,7 @@
   top: 2vh;
   right: 2vw;
   cursor: pointer;
+  z-index: 2;
 }
 
 .tinyText {
@@ -73,17 +144,27 @@
   /* background: aqua; */
 }
 
+.sideMenuBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(3rem + 1px);
+  height: 100vh;
+  z-index: 3;
+  background: #020202;
+}
+
 .sideTitle {
-  font-family: GeneraleStation;
-  font-size: 1.5vh;
+  font-family: LostaMasta-Light;
+  font-size: 2.5vh;
   cursor: pointer;
   
 }
 
 .titleFont {
-  font-family: GeneraleStation;
-  font-size: 13vh;
-  line-height: 12vh;
+  font-family: LostaMasta-Light;
+  font-size: 20vmin;
+  line-height: 16vmin;
 }
 
 .trishRoque {
@@ -93,10 +174,10 @@
 }
 .scrollLine {
   border-top: 1px solid #F4F1EA;
-  width: 158vh;
+  width: 76vmin;
   position: absolute;
-  top: 4vh;
-  left: 2vh;
+  top: 4vmin;
+  left: 2vmin;
 }
 
 .scrollDot {
@@ -105,7 +186,7 @@
   border-radius: 50%;
   background-color: #F4F1EA;
   position: absolute;
-  top: calc(4vh - 1px);
+  top: calc(4vmin - 1px);
 }
 
 .arrow {
@@ -127,7 +208,7 @@
 
 .trishDescription {
   direction: rtl;
-  font-size: 2vh;
+  font-size: 2vmin;
   font-family: ArialNova Light;
   padding-right: 1vh;
   padding-bottom: 2vh;
@@ -265,6 +346,15 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.tab {
+  padding-left: 2.5vh;
+}
+
+.section {
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
 }
 
 .App {
