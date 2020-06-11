@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Title = () => {
+const Title = (props) => {
     return (
         <div className="titleFont" style={{paddingTop: "5vh"}}>
             ART<br />

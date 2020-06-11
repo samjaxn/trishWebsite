@@ -26,6 +26,13 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'LostaMasta-Light';
+  src: url("./fonts/LostaMasta-Light.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   font-family: ArialNova;
