@@ -1,5 +1,6 @@
 import React from 'react'
 import profilePic from '../content/aboutPic.jpg'
+import aboutCircle from '../SVGs/aboutCircle.svg'
 
 const About = (props) => {
     return (
@@ -7,7 +8,8 @@ const About = (props) => {
             <div className="aboutContent">
                 <div className="aboutDesc">
                     Trish Roque is a multidisciplinary designer and artist based in Toronto. Her practice is focused on the influence of designed environment on human physiological response.
-                    <img src={profilePic} className="profilePic"/>
+                    <img src={profilePic} className="aboutPic"/>
+                    <img src={aboutCircle} className="aboutCircle"/>
                 </div>
                 <div className="aboutWork">
                     <div className="aboutColumn1">
