@@ -12,28 +12,9 @@
   position: absolute;
   top: 0;
   left: calc(3rem + 1px);
-  /* left: 100vw; */
   height: 100vh;
   width: calc(100vw - 3rem);
-  /* background:#020202; */
-  /* padding: 3vh; */
   background: navy;
-}
-
-.profilePic {
-  max-height:50vh;
-  width: auto;
-  height: auto;
-  padding-top: 3vh;
-}
-
-.aboutWork {
-  padding: 3vh;
-  padding-top: 6vh;
-  display: flex;
-  /* flex-flow: row wrap; */
-  font-size: 1.7vh;
-  /* background: purple; */
 }
 
 .aboutColumn1 {
@@ -46,16 +27,50 @@
   /* background: red; */
 }
 
-.aboutDesc {
+.aboutWork {
+  padding: 3vh;
+  padding-top: 6vh;
+  display: flex;
+  /* flex-flow: row wrap; */
   font-size: 1.7vh;
-  width: 35vh;
+  /* background: purple; */
 }
 
 .aboutContent {
+  position: absolute;
   padding: 8.5vh 5vh 5vh;
   display: flex;
   background: green;
 }
+
+.aboutDesc {
+  position: relative;
+  font-size: 1.7vh;
+  width: 35vh;
+  background: purple;
+}
+
+.aboutPic {
+  max-height:50vh;
+  width: auto;
+  height: auto;
+  padding-top: 3vh;
+}
+
+.aboutCircle {
+  -webkit-animation:spin 10s linear infinite;
+  -moz-animation:spin 10s linear infinite;
+  animation:spin 10s linear infinite;
+  position: absolute;
+  z-index: 1;
+  max-height:13vh;
+  width: auto;
+  height: auto;
+  top: 88%;
+  right: -15%;
+}
+
+
 
 .aboutTitle {
   position: absolute;
@@ -360,3 +375,7 @@
 .App {
   
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
