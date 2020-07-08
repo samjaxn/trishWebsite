@@ -9,7 +9,8 @@ const Work = (props) => {
     const mouseOver = (e) => {
         setMouse([e.clientX - (workRef.current.clientWidth/2), e.clientY - (workRef.current.clientHeight/2)])
         setOpacity(1)
-        //console.log(`x: ${mouse[0]}, y: ${mouse[1]}`)
+        // console.log(imageOpacity);
+        console.log(`x: ${mouse[0]}, y: ${mouse[1]}`)
         //console.log(workRef)
     }
 
@@ -26,15 +27,15 @@ const Work = (props) => {
                 </div>
                 <img src={arrow} className="arrow" style={{paddingLeft: '0.5vh'}}/>
             </div>
-            <div className="workElemTitle" onMouseMove={mouseOver} onMouseLeave={mouseLeave}>
-                {props.name}
-            </div>
             {props.video != null
                 ? <video className='workImage' ref={workRef} autoplay='' loop={true} muted={true} style={{opacity: imageOpacity, left: mouse[0], top: mouse[1]}}>
                     <source src={props.video} type='video/mp4'></source>
                 </video>
                 : <img src={props.picture} className="workImage" ref={workRef} style={{opacity: imageOpacity, left: mouse[0], top: mouse[1]}}/>
             }
+            <div className="workElemTitle" onMouseMove={mouseOver} onMouseLeave={mouseLeave}>
+                {props.name}
+            </div>
         </div>
     )
 }
