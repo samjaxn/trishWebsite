@@ -7,8 +7,9 @@ import WorkMenu from './WorkMenu'
 import About from './About'
 
 const Main = () => {
+    const rowWidth = -190
     const [horizontalScroll, setHorizontalScroll] = useState(0)
-    const [menuScroll, setMenuScroll] = useState(-113)
+    const [menuScroll, setMenuScroll] = useState(rowWidth)
     const [showAbout, setAbout] = useState(false)
 
     const onWheel = (event) => {
@@ -18,9 +19,9 @@ const Main = () => {
         const menuScrollVal = 26
 
         if(event.deltaY < 0){ //scrollup
-            if(menuScroll > -113){
+            if(menuScroll > rowWidth){
                 setMenuScroll(menuScroll - menuScrollVal)
-                if(menuScroll <= (-113 + 5*menuScrollVal)){
+                if(menuScroll <= (rowWidth + 5*menuScrollVal)){
                     setHorizontalScroll(horizontalScroll + menuScrollVal)
                 }
             }
@@ -47,7 +48,7 @@ const Main = () => {
 
     const homePos = () => {
         setHorizontalScroll(0)
-        setMenuScroll(-113)
+        setMenuScroll(rowWidth)
     }
 
     return (

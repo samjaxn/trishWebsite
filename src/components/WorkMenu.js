@@ -18,14 +18,16 @@ const WorkMenu = (props) => {
                 <Work name='RAPTORS2' picture={photo} number='02'/>
                 <Work name='RAPTORS3' picture={photo} number='03'/>
                 <Work name='POOP' picture={photo} number='04'/>
-                {/* <Work name='RAPTORS2' picture={photo} number='02' style={{transform: 'translate(10vw, 30vh)'}}/> */}
+                <Work name='POOP3' picture={photo} number='05'/>
+                <Work name='RAPTORS2' picture={photo} number='02'/>
             </div>
             <div className='workRow bottomRow' style={{display: 'inline-flex', left: `${props.scroll}vh`, transition: 'left 0.25s'}}>
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work name='RAPTORS2' picture={photo} number='02'/>
                 <Work name='RAPTORS3' picture={photo} number='03'/>
                 <Work name='POOP' picture={photo} number='04'/>
-                {/* <Work name='RAPTORS2' picture={photo} number='02' style={{transform: 'translate(10vw, 30vh)'}}/> */}
+                <Work name='POOP3' picture={photo} number='05'/>
+                <Work name='RAPTORS2' picture={photo} number='02'/>
             </div>
         </div>
     )
