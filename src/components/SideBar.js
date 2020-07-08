@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import BurgerMenu from "./BurgerMenu"
 import whiteBurgerIcon from "../SVGs/whiteBurgerIcon.svg"
+import { set } from 'animejs'
 
 const SideBar = (props) => {
     const [menuOpen, setMenu] = useState(false)
@@ -19,6 +20,13 @@ const SideBar = (props) => {
     const trishClick = () => {
         //change to incorporate new scrolling
         props.goHome()
+        props.setAbout(false)
+        setMenu(false)
+    }
+
+    const aboutClick = () => {
+        props.goHome()
+        props.setAbout(true)
         setMenu(false)
     }
 
@@ -26,8 +34,10 @@ const SideBar = (props) => {
         <div>
             <BurgerMenu
             isOpen={menuOpen}
+            setMenu={setMenu}
             onStateChange={isMenuOpen}
-            customBurgerIcon={<div />}/>
+            customBurgerIcon={<div />}
+            aboutClick={aboutClick}/>
             <div className="sideMenu">
                 <div className="verticalLine" />
                 <div className="topMenu">

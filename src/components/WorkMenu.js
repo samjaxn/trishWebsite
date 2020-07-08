@@ -16,15 +16,15 @@ const WorkMenu = (props) => {
             <div className='workRow topRow' style={{display: 'inline-flex', right: `${props.scroll}vh`, transition: 'right 0.25s'}}>
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work name='RAPTORS2' picture={photo} number='02'/>
-                <Work name='RAPTORS3' video={video} number='03'/>
-                <Work name='POOP' video={video2} number='04'/>
+                <Work name='RAPTORS3' picture={photo} number='03'/>
+                <Work name='POOP' picture={photo} number='04'/>
                 {/* <Work name='RAPTORS2' picture={photo} number='02' style={{transform: 'translate(10vw, 30vh)'}}/> */}
             </div>
             <div className='workRow bottomRow' style={{display: 'inline-flex', left: `${props.scroll}vh`, transition: 'left 0.25s'}}>
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work name='RAPTORS2' picture={photo} number='02'/>
-                <Work name='RAPTORS3' video={video} number='03'/>
-                <Work name='POOP' video={video2} number='04'/>
+                <Work name='RAPTORS3' picture={photo} number='03'/>
+                <Work name='POOP' picture={photo} number='04'/>
                 {/* <Work name='RAPTORS2' picture={photo} number='02' style={{transform: 'translate(10vw, 30vh)'}}/> */}
             </div>
         </div>

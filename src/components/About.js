@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import profilePic from '../content/aboutPic.jpg'
 import aboutCircle from '../SVGs/aboutCircle.svg'
+import { hoverShader } from '../resources/hoverShader'
 
 const About = (props) => {
+    const [hover, setHover] = useState(false)
+
     return (
-        <div className="aboutPage">
+<div className="aboutPage" style={props.showAbout ? {zIndex: 3} : {zIndex: -3}}>
             <div className="aboutContent">
                 <div className="aboutDesc">
                     Trish Roque is a multidisciplinary designer and artist based in Toronto. Her practice is focused on the influence of designed environment on human physiological response.
-                    <img src={profilePic} className="aboutPic"/>
+                    <img src={profilePic} className="aboutPic" onMouseMove={e => setHover(true)} onMouseLeave={e => setHover(false)}/>
                     <img src={aboutCircle} className="aboutCircle"/>
                 </div>
                 <div className="aboutWork">

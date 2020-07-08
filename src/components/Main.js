@@ -9,6 +9,7 @@ import About from './About'
 const Main = () => {
     const [horizontalScroll, setHorizontalScroll] = useState(0)
     const [menuScroll, setMenuScroll] = useState(-113)
+    const [showAbout, setAbout] = useState(false)
 
     const onWheel = (event) => {
         event.preventDefault()
@@ -51,7 +52,7 @@ const Main = () => {
 
     return (
         <div>
-            <SideBar goHome={homePos}/>
+            <SideBar goHome={homePos} showAbout={showAbout} setAbout={setAbout}/>
             <div className="container" onWheel={onWheel}>
                 <div style={{position: 'relative', height: '100%', left: `${horizontalScroll}vh`, transition: 'left 0.25s' }}>
                     <InvertColors />
@@ -60,7 +61,7 @@ const Main = () => {
                 </div>
                 <WorkMenu scroll={menuScroll}/>
             </div>
-            <About />
+            <About showAbout={showAbout} setAbout={setAbout}/>
         </div>
     )
 }
