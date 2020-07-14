@@ -30,6 +30,14 @@ const SideBar = (props) => {
         setMenu(false)
     }
 
+    const workClick = () => {
+        console.log(`work clicked!`)
+    }
+
+    const storeClick = () => {
+        console.log(`store clicked!`)
+    }
+
     return (
         <div>
             <BurgerMenu
@@ -37,7 +45,9 @@ const SideBar = (props) => {
             setMenu={setMenu}
             onStateChange={isMenuOpen}
             customBurgerIcon={<div />}
-            aboutClick={aboutClick}/>
+            aboutClick={aboutClick}
+            workClick={workClick}
+            storeClick={storeClick}/>
             <div className="sideMenu">
                 <div className="verticalLine" />
                 <div className="topMenu">

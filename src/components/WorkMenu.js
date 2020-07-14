@@ -13,7 +13,7 @@ import video2 from '../content/daily13.mp4'
 const WorkMenu = (props) => {
     return (
         <div className='workMenu'>
-            <div className='workRow topRow' style={{display: 'inline-flex', right: `${props.scroll}vh`, transition: 'right 0.25s'}}>
+            <div className='workRow topRow transition' style={{display: 'inline-flex', right: `${props.scroll}vh`, transition: 'right 0.5s'}}>
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work name='RAPTORS2' picture={photo} number='02'/>
                 <Work name='RAPTORS3' picture={photo} number='03'/>
@@ -21,7 +21,7 @@ const WorkMenu = (props) => {
                 <Work name='POOP3' picture={photo} number='05'/>
                 <Work name='RAPTORS2' picture={photo} number='02'/>
             </div>
-            <div className='workRow bottomRow' style={{display: 'inline-flex', left: `${props.scroll}vh`, transition: 'left 0.25s'}}>
+            <div className='workRow bottomRow transition' style={{display: 'inline-flex', left: `${props.scroll}vh`, transition: 'left 0.5s'}}>
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work name='RAPTORS2' picture={photo} number='02'/>
                 <Work name='RAPTORS3' picture={photo} number='03'/>
