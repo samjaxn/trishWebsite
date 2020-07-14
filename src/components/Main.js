@@ -55,7 +55,7 @@ const Main = () => {
         <div>
             <SideBar goHome={homePos} showAbout={showAbout} setAbout={setAbout}/>
             <div className="container" onWheel={onWheel}>
-                <div style={{position: 'relative', height: '100%', left: `${horizontalScroll}vh`, transition: 'left 0.25s' }}>
+                <div className="transition" style={{position: 'relative', height: '100%', left: `${horizontalScroll}vh`, transition: 'left 0.5s' }}>
                     <InvertColors />
                     <Title />
                     <TrishRoque />

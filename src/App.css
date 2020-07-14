@@ -92,6 +92,10 @@
   bottom: 0;
 }
 
+.transition {
+  transition-timing-function: ease-in-out;
+}
+
 .workMenu {
   position: absolute;
   top: 18vh;
@@ -194,7 +198,7 @@
 
 .trishRoque {
   position: absolute;
-  left: 115vh;
+  left: 155vh;
   bottom: 4vh;
 }
 .scrollLine {
