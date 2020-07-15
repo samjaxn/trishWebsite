@@ -2,12 +2,17 @@ import React, { useRef, useEffect } from 'react'
 import anime from 'animejs/lib/anime.es'
 import arrow from '../SVGs/arrow.svg'
 
-const TrishRoque = () => {
+const TrishRoque = (props) => {
     const trishRef = useRef()
 
     useEffect(() => {
-        startUpAnimation()
-    }, [])
+        if(!props.showAbout){
+            startUpAnimation()
+        }
+        else{
+
+        }
+    }, [props.showAbout])
 
     const startUpAnimation = () => {
         anime({

@@ -8,8 +8,13 @@ const Title = (props) => {
 
     //useEffect below is used as an onMount
     useEffect(() => {
-        startUpAnimation()
-    }, [])
+        if(!props.showAbout){
+            startUpAnimation()
+        }
+        else{
+            
+        }
+    }, [props.showAbout])
 
     const startUpAnimation = () => {
         anime({
@@ -24,9 +29,9 @@ const Title = (props) => {
 
     return (
         <div className="titleFont" style={{paddingTop: "25vh"}}>
-            <div ref={refArt} style={{opacity: '0'}}>ART</div>
-            <div ref={refDesign} style={{opacity: '0'}}>DESIGN</div>
-            <div ref={refMotion} style={{opacity: '0'}}>MOTION</div>
+            <div ref={refArt} style={{opacity: '0%'}}>ART</div>
+            <div ref={refDesign} style={{opacity: '0%'}}>DESIGN</div>
+            <div ref={refMotion} style={{opacity: '0%'}}>MOTION</div>
         </div>
     )
 }
