@@ -6,7 +6,12 @@ const Title = (props) => {
     const refDesign = useRef()
     const refMotion = useRef()
 
+    //useEffect below is used as an onMount
     useEffect(() => {
+        startUpAnimation()
+    }, [])
+
+    const startUpAnimation = () => {
         anime({
             targets: [refArt.current, refDesign.current, refMotion.current],
             translateY: '-20vh',
@@ -15,13 +20,13 @@ const Title = (props) => {
             duration: 2000,
             delay: anime.stagger(500)
         })
-    }, [])
+    }
 
     return (
         <div className="titleFont" style={{paddingTop: "25vh"}}>
-            <div ref={refArt}>ART</div>
-            <div ref={refDesign}>DESIGN</div>
-            <div ref={refMotion}>MOTION</div>
+            <div ref={refArt} style={{opacity: '0'}}>ART</div>
+            <div ref={refDesign} style={{opacity: '0'}}>DESIGN</div>
+            <div ref={refMotion} style={{opacity: '0'}}>MOTION</div>
         </div>
     )
 }
