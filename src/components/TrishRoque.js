@@ -6,6 +6,10 @@ const TrishRoque = () => {
     const trishRef = useRef()
 
     useEffect(() => {
+        startUpAnimation()
+    }, [])
+
+    const startUpAnimation = () => {
         anime({
             targets: trishRef.current,
             translateX: '-40vh',
@@ -14,10 +18,10 @@ const TrishRoque = () => {
             duration: 3000,
             delay: 1500
         })
-    }, [])
+    }
 
     return (
-            <div className="trishRoque" ref={trishRef}>
+            <div className="trishRoque" ref={trishRef} style={{opacity: '0'}}>
                 <div style={{display: 'inline-block', width: '100%'}}>
                     <div className="tinyText" style={{float: 'left'}}>
                         scroll to explore
