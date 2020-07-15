@@ -1,13 +1,43 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import profilePic from '../content/aboutPic.jpg'
 import aboutCircle from '../SVGs/aboutCircle.svg'
+import anime from 'animejs/lib/anime.es'
 import { hoverShader } from '../resources/hoverShader'
 
 const About = (props) => {
     const [hover, setHover] = useState(false)
+    const [zIndex, setZIndex] = useState(-3)
+    const [opacity, setOpacity] = useState('100%')
+    const aboutRef = useRef()
+
+    useEffect(() => {
+        console.log("updated")
+        if(props.showAbout){
+            setZIndex(3)
+            setOpacity('0')
+        }
+        else if(opacity === '0'){
+            fadeOutAnimation()
+        }
+    }, [props.showAbout])
+
+    const fadeOutAnimation = () => {
+        anime({
+            targets: aboutRef.current,
+            opacity: '100%',
+            duration: 500,
+            easing: 'linear',
+            complete: () => {
+                console.log("finished animation")
+                setZIndex(-3)
+                setOpacity('100%')
+            }
+        })
+    }
 
     return (
-<div className="aboutPage" style={props.showAbout ? {zIndex: 3} : {zIndex: -3}}>
+        // <div className="aboutPage" style={props.showAbout ? {zIndex: 3} : {zIndex: -3}}>
+        <div className="aboutPage" style={{zIndex: zIndex}}>
             <div className="aboutContent">
                 <div className="aboutDesc">
                     Trish Roque is a multidisciplinary designer and artist based in Toronto. Her practice is focused on the influence of designed environment on human physiological response.
@@ -53,6 +83,7 @@ const About = (props) => {
             <div className="aboutTitle">
                 ABOUT
             </div>
+            <div className="fadePage" ref={aboutRef} style={{opacity: opacity}}/>
         </div>
     )
 }

@@ -57,8 +57,8 @@ const Main = () => {
             <div className="container" onWheel={onWheel}>
                 <div className="transition" style={{position: 'relative', height: '100%', left: `${horizontalScroll}vh`, transition: 'left 0.5s' }}>
                     <InvertColors />
-                    <Title />
-                    <TrishRoque />
+                    <Title showAbout={showAbout}/>
+                    <TrishRoque showAbout={showAbout}/>
                 </div>
                 <WorkMenu scroll={menuScroll}/>
             </div>
