@@ -101,7 +101,7 @@
 }
 
 .transition {
-  transition-timing-function: ease-in-out;
+  transition-timing-function: linear;
 }
 
 .workMenu {
