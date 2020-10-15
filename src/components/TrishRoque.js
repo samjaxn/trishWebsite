@@ -17,8 +17,8 @@ const TrishRoque = (props) => {
     const startUpAnimation = () => {
         anime({
             targets: trishRef.current,
-            translateX: '-40vh',
-            opacity: '1',
+            translateX: ['40vh', '0vh'],
+            opacity: ['0', '1'],
             easing: 'easeInOutExpo',
             duration: 3000,
             delay: 1500
@@ -26,7 +26,7 @@ const TrishRoque = (props) => {
     }
 
     return (
-            <div className="trishRoque" ref={trishRef} style={{opacity: '0'}}>
+            <div className="trishRoque" ref={trishRef}>
                 <div style={{display: 'inline-block', width: '100%'}}>
                     <div className="tinyText" style={{float: 'left'}}>
                         scroll to explore

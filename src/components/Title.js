@@ -19,8 +19,8 @@ const Title = (props) => {
     const startUpAnimation = () => {
         anime({
             targets: [refArt.current, refDesign.current, refMotion.current],
-            translateY: '-20vh',
-            opacity: '1',
+            translateY: ['25vh', '5vh'],
+            opacity: ['0', '1'],
             easing: 'easeInOutExpo',
             duration: 2000,
             delay: anime.stagger(500)
@@ -28,10 +28,10 @@ const Title = (props) => {
     }
 
     return (
-        <div className="titleFont" style={{paddingTop: "25vh"}}>
-            <div ref={refArt} style={{opacity: '0'}}>ART</div>
-            <div ref={refDesign} style={{opacity: '0'}}>DESIGN</div>
-            <div ref={refMotion} style={{opacity: '0'}}>MOTION</div>
+        <div className="titleFont">
+            <div ref={refArt}>ART</div>
+            <div ref={refDesign}>DESIGN</div>
+            <div ref={refMotion}>MOTION</div>
         </div>
     )
 }
