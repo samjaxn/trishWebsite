@@ -18,7 +18,7 @@ const TrishRoque = (props) => {
         anime({
             targets: trishRef.current,
             translateX: '-40vh',
-            opacity: '100%',
+            opacity: '1',
             easing: 'easeInOutExpo',
             duration: 3000,
             delay: 1500
