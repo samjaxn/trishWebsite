@@ -36,6 +36,7 @@ const Main = () => {
     const [showAbout, setAbout] = useState(false)
     const [current, setCurrent] = useState(0)
     const [workScroll, setWorkScroll] = useState(rowWidth)
+    const [touchPos, setTouchPos] = useState(null)
 
     const titleRef = useRef()
 
@@ -106,10 +107,6 @@ const Main = () => {
         setMenuScroll(rowWidth)
     }
 
-    // useAnimationFrame((deltaTime) => {
-    //     setCurrent((prevCurrent) => updateCurrent2(prevCurrent, deltaTime))
-    // })
-
     //handling scroll animation
     useLayoutEffect(() => {
         let diff1 = Math.abs(current - horizontalScroll)
@@ -153,10 +150,20 @@ const Main = () => {
 
     }, [horizontalScroll, menuScroll])
 
+    const touchMove = (event) => {
+        let touchScroll = event.touches[0].clientX
+        let scroll = touchPos - touchScroll
+        scroll = 0.001*(getScrollVal(scroll))
+        console.log(scroll)
+
+        getScrollPosition(scroll)
+        setTouchPos(touchScroll)
+    }
+
     return (
         <div>
             <SideBar goHome={homePos} showAbout={showAbout} setAbout={setAbout}/>
-            <div className="container" onWheel={onWheel}>
+            <div className="container" onWheel={onWheel} onTouchMove={touchMove}>
                 {/* <div className="" style={{position: 'absolute', height: '100%', translateX: `${-current/2 + 50}vh`}}>
                     <img src={photo} className="workImage" style={{paddingTop: '35vh'}} />
                 </div> */}
