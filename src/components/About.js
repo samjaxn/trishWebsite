@@ -24,13 +24,13 @@ const About = (props) => {
     const fadeOutAnimation = () => {
         anime({
             targets: aboutRef.current,
-            opacity: '100%',
+            opacity: '1',
             duration: 500,
             easing: 'linear',
             complete: () => {
                 console.log("finished animation")
                 setZIndex(-3)
-                setOpacity('100%')
+                setOpacity('1')
             }
         })
     }

@@ -29,7 +29,10 @@ const useAnimationFrame = (callback) => {
 }
 
 const Main = () => {
+    const maxMenuScroll = (window.innerWidth)/(window.innerHeight/100)
+    const menuScrollCheck = 26
     const rowWidth = -190
+    const maxHorizontalScroll = (rowWidth + 5*menuScrollCheck)
 
     const [horizontalScroll, setHorizontalScroll] = useState(0)
     const [menuScroll, setMenuScroll] = useState(rowWidth)
@@ -40,7 +43,7 @@ const Main = () => {
     const titleRef = useRef()
 
     const onWheel = (event) => {
-        event.preventDefault()
+        //event.preventDefault()
         
         let xScroll = Math.abs(event.deltaX)
         let yScroll = Math.abs(event.deltaY)
@@ -59,6 +62,7 @@ const Main = () => {
     }
 
     const getScrollVal = (val) => {
+        //console.log(val)
         if(val > 25){
             return 25
         }
@@ -69,25 +73,30 @@ const Main = () => {
     }
 
     const getScrollPosition = (scroll) => {
-        const maxMenuScroll = (window.innerWidth)/(window.innerHeight/100)
-        const menuScrollCheck = 26
-        const menuScrollVal = 25
+        let menuScrollVal = Math.abs(scroll)
+
+        //console.log(`horizontalScroll: ${horizontalScroll}, scroll: ${scroll}`)
 
         if(scroll < 0){ //scrollup
             if(menuScroll > rowWidth){
                 setMenuScroll(menuScroll - menuScrollVal)
-                if(menuScroll <= (rowWidth + 5*menuScrollCheck)){
+                if(menuScroll <= maxHorizontalScroll){
                     setHorizontalScroll(horizontalScroll + menuScrollVal)
                 }
             }
             else {
                 if(horizontalScroll < 0){
-                    setHorizontalScroll(horizontalScroll + menuScrollVal) 
+                    if(horizontalScroll + menuScrollVal > 0){
+                        setHorizontalScroll(0)
+                    }
+                    else{
+                        setHorizontalScroll(horizontalScroll + menuScrollVal) 
+                    }
                 }
             }
         }
         else{
-            if(horizontalScroll > (-11 * menuScrollCheck)){
+            if(horizontalScroll > (-12 * menuScrollCheck)){
                 setHorizontalScroll(horizontalScroll - menuScrollVal)
                 if(horizontalScroll <= (-6 * menuScrollCheck)){
                     setMenuScroll(menuScroll + menuScrollVal)
@@ -106,10 +115,6 @@ const Main = () => {
         setMenuScroll(rowWidth)
     }
 
-    // useAnimationFrame((deltaTime) => {
-    //     setCurrent((prevCurrent) => updateCurrent2(prevCurrent, deltaTime))
-    // })
-
     //handling scroll animation
     useLayoutEffect(() => {
         let diff1 = Math.abs(current - horizontalScroll)
@@ -121,9 +126,9 @@ const Main = () => {
                 setCurrent(x => {
                     let diff = Math.abs(x - horizontalScroll)
                     //console.log(x)
-                    if(diff > 0.1){
-                        let val = lerp(x, horizontalScroll, 0.05)
-                        return parseFloat(val.toFixed(2))
+                    if(diff > 0.3){
+                        let val = lerp(x, horizontalScroll, 0.3)
+                        return parseFloat(val.toFixed(1))
                     }
                     else{
                         return horizontalScroll
@@ -132,9 +137,9 @@ const Main = () => {
                 setWorkScroll(x => {
                     let diff = Math.abs(x - menuScroll)
                     //console.log(x)
-                    if(diff > 0.1){
-                        let val = lerp(x, menuScroll, 0.05)
-                        return parseFloat(val.toFixed(2))
+                    if(diff > 0.3){
+                        let val = lerp(x, menuScroll, 0.3)
+                        return parseFloat(val.toFixed(1))
                     }
                     else{
                         return menuScroll
@@ -146,9 +151,6 @@ const Main = () => {
             newCurrent = requestAnimationFrame(animate)
 
             return () => cancelAnimationFrame(newCurrent)
-        }
-        else{
-            setCurrent(horizontalScroll)
         }
 
     }, [horizontalScroll, menuScroll])
