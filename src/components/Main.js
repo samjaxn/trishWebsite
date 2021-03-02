@@ -50,6 +50,7 @@ const Main = () => {
     }
 
     const onTouchMove = (event) => {
+
         getScrollPosition(te.current - event.changedTouches[0].clientX)
         te.current = event.changedTouches[0].clientX;
     }
