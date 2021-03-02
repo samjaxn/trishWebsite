@@ -395,7 +395,8 @@
 }
 
 .App {
-  
+  overflow: hidden !important;
+  position: relative;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
