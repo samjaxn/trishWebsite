@@ -12,6 +12,7 @@
   height: 100vh;
   width: calc(110vw - 3rem);
   /* overflow-x: scroll; */
+  touch-action: none;
   scrollbar-width: none;
   padding-left: 3vh;
   background-color: #020202;
@@ -206,7 +207,7 @@
 
 .trishRoque {
   position: absolute;
-  left: 155vh;
+  left: 100%;
   bottom: 4vh;
 }
 .scrollLine {
@@ -318,8 +319,9 @@
 .menuLabel {
   font-family: GeneraleStation;
   color: inherit;
-  font-size: 7vw;
-  line-height: 6.5vw;
+  /* font-size: 7vw; */
+  font-size: max(7vw, 2.8rem);
+  line-height: max(6.5vw, 2.6rem);
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
