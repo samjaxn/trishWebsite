@@ -41,6 +41,18 @@ const Main = () => {
     const [workScroll, setWorkScroll] = useState(rowWidth)
 
     const titleRef = useRef()
+    const tsX = useRef();
+    const te = useRef()
+
+    const onTouchStart = (event) => {
+        tsX.current = event.touches[0].clientX;
+        te.current = event.touches[0].clientX;
+    }
+
+    const onTouchMove = (event) => {
+        getScrollPosition(te.current - event.changedTouches[0].clientX)
+        te.current = event.changedTouches[0].clientX;
+    }
 
     const onWheel = (event) => {
         //event.preventDefault()
@@ -158,7 +170,7 @@ const Main = () => {
     return (
         <div>
             <SideBar goHome={homePos} showAbout={showAbout} setAbout={setAbout}/>
-            <div className="container" onWheel={onWheel}>
+            <div className="container" onWheel={onWheel} onTouchStart={onTouchStart} onTouchMove={onTouchMove}>
                 {/* <div className="" style={{position: 'absolute', height: '100%', translateX: `${-current/2 + 50}vh`}}>
                     <img src={photo} className="workImage" style={{paddingTop: '35vh'}} />
                 </div> */}
