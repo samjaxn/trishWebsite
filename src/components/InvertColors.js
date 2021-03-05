@@ -6,8 +6,10 @@ const InvertColors = () => {
     }
 
     return (
-        <div className="invertColors tinyText" onClick={invertClicked}>
-            invert colours
+        <div>
+            <div className="invertColors tinyText" onClick={invertClicked}>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
         </div>
     )
 }
