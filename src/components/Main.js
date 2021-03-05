@@ -41,11 +41,9 @@ const Main = () => {
     const [workScroll, setWorkScroll] = useState(rowWidth)
 
     const titleRef = useRef()
-    const tsX = useRef();
     const te = useRef()
 
     const onTouchStart = (event) => {
-        tsX.current = event.touches[0].clientX;
         te.current = event.touches[0].clientX;
     }
 
@@ -175,7 +173,7 @@ const Main = () => {
                 {/* <div className="" style={{position: 'absolute', height: '100%', translateX: `${-current/2 + 50}vh`}}>
                     <img src={photo} className="workImage" style={{paddingTop: '35vh'}} />
                 </div> */}
-                <div className="" ref={titleRef} style={{position: 'absolute', height: '100%', left: `${current + 8}vh`}}>
+                <div className="" ref={titleRef} style={{position: 'absolute', height: '100%', left: `${current + 8}vmax`}}>
                     <InvertColors />
                     <Title showAbout={showAbout}/>
                     <TrishRoque showAbout={showAbout}/>

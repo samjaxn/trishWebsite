@@ -24,7 +24,7 @@ const TrishRoque = (props) => {
             delay: 1500
         })
     }
-
+    
     return (
             <div className="trishRoque" ref={trishRef}>
                 <div style={{display: 'inline-block', width: '100%'}}>
