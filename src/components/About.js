@@ -91,7 +91,7 @@ const About = (props) => {
         if(aboutContentRef.current){
             let scrollPos = scrollVal - scroll
             console.log(scrollPos, window.innerWidth, -930 + window.innerWidth)
-            if(window.innerWidth < 930){
+            if(window.innerWidth < 930 && window.innerWidth/window.innerHeight < 1.03){
                 if(scrollPos > 0){
                     console.log("least")
                     scrollPos = 0
