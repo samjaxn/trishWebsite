@@ -12,7 +12,7 @@ const SideBar = (props) => {
     }
 
     const isMenuOpen = (state) => {
-        console.log(`is menu open: ${state.isOpen}`)
+        //console.log(`is menu open: ${state.isOpen}`)
         setMenu(state.isOpen)
         return state.isOpen
     }
@@ -31,11 +31,13 @@ const SideBar = (props) => {
     }
 
     const workClick = () => {
-        console.log(`work clicked!`)
+        props.goWork()
+        props.setAbout(false)
+        setMenu(false)
     }
 
     const storeClick = () => {
-        console.log(`store clicked!`)
+        //console.log(`store clicked!`)
     }
 
     return (

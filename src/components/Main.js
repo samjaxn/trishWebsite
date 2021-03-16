@@ -6,7 +6,6 @@ import TrishRoque from './TrishRoque'
 import InvertColors from './InvertColors'
 import WorkMenu from './WorkMenu'
 import About from './About'
-import photo from '../content/photo1.png'
 
 const useAnimationFrame = (callback) => {
     const requestRef = useRef()
@@ -31,7 +30,7 @@ const useAnimationFrame = (callback) => {
 const Main = () => {
     const maxMenuScroll = (window.innerWidth)/(window.innerHeight/100)
     const menuScrollCheck = 26
-    const rowWidth = -190
+    const rowWidth = -350
     const maxHorizontalScroll = (rowWidth + 5*menuScrollCheck)
 
     const [horizontalScroll, setHorizontalScroll] = useState(0)
@@ -39,6 +38,7 @@ const Main = () => {
     const [showAbout, setAbout] = useState(false)
     const [current, setCurrent] = useState(0)
     const [workScroll, setWorkScroll] = useState(rowWidth)
+    const [scrolling, setScrolling] = useState(false)
 
     const titleRef = useRef()
     const te = useRef()
@@ -73,7 +73,7 @@ const Main = () => {
     }
 
     const getScrollVal = (val) => {
-        //console.log(val)
+        ////console.log(val)
         if(val > 25){
             return 25
         }
@@ -86,9 +86,10 @@ const Main = () => {
     const getScrollPosition = (scroll) => {
         let menuScrollVal = Math.abs(scroll)
 
-        //console.log(`horizontalScroll: ${horizontalScroll}, scroll: ${scroll}`)
-
+        ////console.log(`horizontalScroll: ${horizontalScroll}, scroll: ${scroll}`)
+        //console.log(horizontalScroll, menuScroll, menuScrollCheck, rowWidth, maxHorizontalScroll)
         if(scroll < 0){ //scrollup
+            
             if(menuScroll > rowWidth){
                 setMenuScroll(menuScroll - menuScrollVal)
                 if(menuScroll <= maxHorizontalScroll){
@@ -107,9 +108,9 @@ const Main = () => {
             }
         }
         else{
-            if(horizontalScroll > (-12 * menuScrollCheck)){
+            if(horizontalScroll > (-8 * menuScrollCheck)){
                 setHorizontalScroll(horizontalScroll - menuScrollVal)
-                if(horizontalScroll <= (-6 * menuScrollCheck)){
+                if(horizontalScroll <= (-3 * menuScrollCheck)){
                     setMenuScroll(menuScroll + menuScrollVal)
                 }
             }
@@ -126,8 +127,21 @@ const Main = () => {
         setMenuScroll(rowWidth)
     }
 
+    const workPos = () => {
+        setHorizontalScroll(-210)
+        setMenuScroll(-10)
+    }
+
+    const scrollingUpdate = () => {
+        if(scrolling == true){
+            //console.log("updated")
+            setScrolling(false)
+        }
+    }
+
     //handling scroll animation
     useLayoutEffect(() => {
+        setScrolling(true)
         let diff1 = Math.abs(current - horizontalScroll)
         let diff2 = Math.abs(workScroll - menuScroll)
         let newCurrent
@@ -136,7 +150,7 @@ const Main = () => {
             const animate = () => {
                 setCurrent(x => {
                     let diff = Math.abs(x - horizontalScroll)
-                    //console.log(x)
+                    ////console.log(x)
                     if(diff > 0.3){
                         let val = lerp(x, horizontalScroll, 0.3)
                         return parseFloat(val.toFixed(1))
@@ -147,7 +161,7 @@ const Main = () => {
                 })
                 setWorkScroll(x => {
                     let diff = Math.abs(x - menuScroll)
-                    //console.log(x)
+                    ////console.log(x)
                     if(diff > 0.3){
                         let val = lerp(x, menuScroll, 0.3)
                         return parseFloat(val.toFixed(1))
@@ -168,17 +182,17 @@ const Main = () => {
 
     return (
         <div>
-            <SideBar goHome={homePos} showAbout={showAbout} setAbout={setAbout}/>
-            <div className="container" onWheel={onWheel} onTouchStart={onTouchStart} onTouchMove={onTouchMove}>
+            <SideBar goHome={homePos} showAbout={showAbout} setAbout={setAbout} goWork={workPos} />
+            <div className="container" onWheel={onWheel} onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={scrollingUpdate}>
                 {/* <div className="" style={{position: 'absolute', height: '100%', translateX: `${-current/2 + 50}vh`}}>
                     <img src={photo} className="workImage" style={{paddingTop: '35vh'}} />
                 </div> */}
-                <div className="" ref={titleRef} style={{position: 'absolute', height: '100%', left: `${current + 8}vmax`}}>
+                <div className="" ref={titleRef} style={{position: 'absolute', height: '100%', left: `calc(8vh + ${current}vh)`}}>
                     <InvertColors />
                     <Title showAbout={showAbout}/>
                     <TrishRoque showAbout={showAbout}/>
                 </div>
-                <WorkMenu scroll={workScroll}/>
+                <WorkMenu scroll={workScroll} scrolling={scrolling}/>
             </div>
             <About showAbout={showAbout} setAbout={setAbout}/>
         </div>

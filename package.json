@@ -11,6 +11,7 @@
     "gsap": "^3.6.0",
     "horizontal-scroll": "^1.1.0",
     "lerp": "^1.0.3",
+    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.1",
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss-normalize": "^8.0.1"
   }
 }

@@ -12,7 +12,7 @@ const About = (props) => {
     const aboutRef = useRef()
 
     useEffect(() => {
-        console.log("updated")
+        //console.log("updated")
         if(props.showAbout){
             setZIndex(3)
             setOpacity('0')
@@ -37,7 +37,7 @@ const About = (props) => {
             duration: 500,
             easing: 'linear',
             complete: () => {
-                console.log("finished animation")
+                //console.log("finished animation")
                 setZIndex(-3)
                 setOpacity('1')
                 setScroll(0)
@@ -75,7 +75,7 @@ const About = (props) => {
     }
 
     const getScrollVal = (val) => {
-        //console.log(val)
+        ////console.log(val)
         val = val * 3
         if(val > 25){
             return 25
@@ -90,23 +90,23 @@ const About = (props) => {
         
         if(aboutContentRef.current){
             let scrollPos = scrollVal - scroll
-            console.log(scrollPos, window.innerWidth, -930 + window.innerWidth)
+            //console.log(scrollPos, window.innerWidth, -930 + window.innerWidth)
             if(window.innerWidth < 930 && window.innerWidth/window.innerHeight < 1.03){
                 if(scrollPos > 0){
-                    console.log("least")
+                    //console.log("least")
                     scrollPos = 0
                 }
                 else if(scrollPos < -930 + window.innerWidth ){
-                    console.log("most")
+                    //console.log("most")
                     scrollPos = -930 + window.innerWidth
                 }
             setScroll(scrollPos)
             }
             
             
-            //console.log(scrollPos, scrollPos - window.innerWidth)
+            ////console.log(scrollPos, scrollPos - window.innerWidth)
         }
-        //console.log(aboutContentRef.current.offsetWidth)
+        ////console.log(aboutContentRef.current.offsetWidth)
     }
 
     const aboutContentRef = useRef()
