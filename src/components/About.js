@@ -123,12 +123,16 @@ const About = (props) => {
                     <div className="aboutColumn1">
                         ELSEWHERE
                         <div className="tab section">
-                            t@trishroque.co<br/>
+                            trish@ghostatelier.com<br/>
                             instagram@trishroque_<br/>
                             twitter @trishroque_
                         </div>
                         RECENTLY:
                         <div className="section">
+                            CHANEL<br/>
+                            i-D<br/>
+                            NIKE<br/>
+                            POLESTAR<br/>
                             SONY<br/>
                             RAPTORS<br/>
                             HXOUSE<br/>
@@ -136,8 +140,7 @@ const About = (props) => {
                             WESTBANK<br/>
                             CLUEP<br/>
                             REAL SPORTS<br/>
-                            ANDRAS<br/>
-                            STACK
+                            ANDRAS
                         </div>
                     </div>
                     <div className="aboutColumn2">
@@ -149,6 +152,7 @@ const About = (props) => {
                         </div>
                         SPEAKING/MENTORING
                         <div className="section">
+                            Nike Air Max Day<br/>
                             Nuit Talks<br/>
                             HXOUSE 1-day challenges
                         </div>
