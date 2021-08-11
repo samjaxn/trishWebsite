@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c43b8aa.chunk.css",
+    "main.js": "/static/js/main.abc9253f.chunk.js",
+    "main.js.map": "/static/js/main.abc9253f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.91f64494.js",
+    "runtime-main.js.map": "/static/js/runtime-main.91f64494.js.map",
+    "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
+    "static/js/2.37bc75d3.chunk.js": "/static/js/2.37bc75d3.chunk.js",
+    "static/js/2.37bc75d3.chunk.js.map": "/static/js/2.37bc75d3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ac1cae9df67bf8709db1d2c88dec2f74.js": "/precache-manifest.ac1cae9df67bf8709db1d2c88dec2f74.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.9c43b8aa.chunk.css.map": "/static/css/main.9c43b8aa.chunk.css.map",
+    "static/js/2.37bc75d3.chunk.js.LICENSE.txt": "/static/js/2.37bc75d3.chunk.js.LICENSE.txt",
+    "static/media/ACRONYM.mp4": "/static/media/ACRONYM.547329b9.mp4",
+    "static/media/index.css": "/static/media/LostaMasta-Light.5fd9cdbe.ttf",
+    "static/media/aboutCircle.svg": "/static/media/aboutCircle.6808f8d5.svg",
+    "static/media/aboutPic.jpg": "/static/media/aboutPic.0c62a0bc.jpg",
+    "static/media/arrow.svg": "/static/media/arrow.dabe39ca.svg",
+    "static/media/brokenHearts.png": "/static/media/brokenHearts.c9834035.png",
+    "static/media/crossIcon.svg": "/static/media/crossIcon.b58f06b4.svg",
+    "static/media/daniela.mp4": "/static/media/daniela.5027e006.mp4",
+    "static/media/danielaKLFG.mp4": "/static/media/danielaKLFG.74b9a03b.mp4",
+    "static/media/equinox.gif": "/static/media/equinox.31fd9293.gif",
+    "static/media/momentum.gif": "/static/media/momentum.cb44f0ca.gif",
+    "static/media/nobis.mp4": "/static/media/nobis.45014e20.mp4",
+    "static/media/raptors.mp4": "/static/media/raptors.9c3d30ef.mp4",
+    "static/media/whiteBurgerIcon.svg": "/static/media/whiteBurgerIcon.7dfae25c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91f64494.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.37bc75d3.chunk.js",
+    "static/css/main.9c43b8aa.chunk.css",
+    "static/js/main.abc9253f.chunk.js"
+  ]
+}
