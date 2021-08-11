@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/trishWebsite/static/css/main.549d9915.chunk.css",
-    "main.js": "/trishWebsite/static/js/main.dec48bf7.chunk.js",
-    "main.js.map": "/trishWebsite/static/js/main.dec48bf7.chunk.js.map",
+    "main.js": "/trishWebsite/static/js/main.0ba7ae95.chunk.js",
+    "main.js.map": "/trishWebsite/static/js/main.0ba7ae95.chunk.js.map",
     "runtime-main.js": "/trishWebsite/static/js/runtime-main.4e53c247.js",
     "runtime-main.js.map": "/trishWebsite/static/js/runtime-main.4e53c247.js.map",
     "static/css/2.764ccc25.chunk.css": "/trishWebsite/static/css/2.764ccc25.chunk.css",
-    "static/js/2.37bc75d3.chunk.js": "/trishWebsite/static/js/2.37bc75d3.chunk.js",
-    "static/js/2.37bc75d3.chunk.js.map": "/trishWebsite/static/js/2.37bc75d3.chunk.js.map",
+    "static/js/2.d7667886.chunk.js": "/trishWebsite/static/js/2.d7667886.chunk.js",
+    "static/js/2.d7667886.chunk.js.map": "/trishWebsite/static/js/2.d7667886.chunk.js.map",
     "index.html": "/trishWebsite/index.html",
-    "precache-manifest.aa3062affca19a300eec77cb4a09f3a0.js": "/trishWebsite/precache-manifest.aa3062affca19a300eec77cb4a09f3a0.js",
+    "precache-manifest.6dc82d13e01413a348acfbe244dba4bf.js": "/trishWebsite/precache-manifest.6dc82d13e01413a348acfbe244dba4bf.js",
     "service-worker.js": "/trishWebsite/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/trishWebsite/static/css/2.764ccc25.chunk.css.map",
     "static/css/main.549d9915.chunk.css.map": "/trishWebsite/static/css/main.549d9915.chunk.css.map",
-    "static/js/2.37bc75d3.chunk.js.LICENSE.txt": "/trishWebsite/static/js/2.37bc75d3.chunk.js.LICENSE.txt",
+    "static/js/2.d7667886.chunk.js.LICENSE.txt": "/trishWebsite/static/js/2.d7667886.chunk.js.LICENSE.txt",
     "static/media/ACRONYM.mp4": "/trishWebsite/static/media/ACRONYM.547329b9.mp4",
     "static/media/index.css": "/trishWebsite/static/media/LostaMasta-Light.5fd9cdbe.ttf",
     "static/media/aboutCircle.svg": "/trishWebsite/static/media/aboutCircle.6808f8d5.svg",
@@ -25,15 +25,18 @@
     "static/media/danielaKLFG.mp4": "/trishWebsite/static/media/danielaKLFG.74b9a03b.mp4",
     "static/media/equinox.gif": "/trishWebsite/static/media/equinox.31fd9293.gif",
     "static/media/momentum.gif": "/trishWebsite/static/media/momentum.cb44f0ca.gif",
+    "static/media/nikeAMD.png": "/trishWebsite/static/media/nikeAMD.636164ef.png",
     "static/media/nobis.mp4": "/trishWebsite/static/media/nobis.45014e20.mp4",
+    "static/media/nuitBlanche.gif": "/trishWebsite/static/media/nuitBlanche.1c075720.gif",
     "static/media/raptors.mp4": "/trishWebsite/static/media/raptors.9c3d30ef.mp4",
+    "static/media/theGathering.mp4": "/trishWebsite/static/media/theGathering.5531e8b3.mp4",
     "static/media/whiteBurgerIcon.svg": "/trishWebsite/static/media/whiteBurgerIcon.7dfae25c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4e53c247.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.37bc75d3.chunk.js",
+    "static/js/2.d7667886.chunk.js",
     "static/css/main.549d9915.chunk.css",
-    "static/js/main.dec48bf7.chunk.js"
+    "static/js/main.0ba7ae95.chunk.js"
   ]
 }
