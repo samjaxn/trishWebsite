@@ -7,7 +7,7 @@ import danielaDollars from '../content/daniela.mp4'
 import danielaKLFG from '../content/danielaKLFG.mp4'
 import equinox from '../content/equinox.gif'
 import momentum from '../content/momentum.gif'
-import nobis from '../content/nobis.gif'
+import nobis from '../content/nobis.mp4'
 import raptors from '../content/raptors.mp4'
 
 //change the scroll to have the elements move to the left rather than the current way
@@ -27,7 +27,7 @@ const WorkMenu = (props) => {
                 <Work number='04' name={'DANIELA\nANDRADE\n- $$$'} video={danielaDollars} scrolling={props.scrolling}/>
                 <Work number='05' name={'EQUINOX'} picture={equinox} scrolling={props.scrolling}/>
                 <Work number='06' name={'MOMENTUM'} picture={momentum} scrolling={props.scrolling}/>
-                <Work number='07' name={'NOBIS'} picture={nobis} scrolling={props.scrolling}/>
+                <Work number='07' name={'NOBIS'} video={nobis} scrolling={props.scrolling}/>
                 <Work number='08' name={'RAPTORS'} video={raptors} scrolling={props.scrolling}/>
             </div>
             <div className='workRow bottomRow' style={{display: 'inline-flex', left: `${props.scroll}vh`}}>
@@ -38,7 +38,7 @@ const WorkMenu = (props) => {
                 <Work number='04' name={'DANIELA\nANDRADE\n- $$$'} video={danielaDollars} scrolling={props.scrolling}/>
                 <Work number='05' name={'EQUINOX'} picture={equinox} scrolling={props.scrolling}/>
                 <Work number='06' name={'MOMENTUM'} picture={momentum} scrolling={props.scrolling}/>
-                <Work number='07' name={'NOBIS'} picture={nobis} scrolling={props.scrolling}/>
+                <Work number='07' name={'NOBIS'} video={nobis} scrolling={props.scrolling}/>
                 <Work number='08' name={'RAPTORS'} video={raptors} scrolling={props.scrolling}/>
             </div>
         </div>
