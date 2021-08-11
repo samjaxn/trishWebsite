@@ -27,7 +27,7 @@ const BurgerMenu = (props) => {
                     ABOUT
                 </p>
                 <p className="menu-item menuLabel" onClick={props.storeClick}>
-                    STORE
+                    SHOP
                 </p>
                 <p className="sideMenuFooter">DESIGN,TRISH ROQUE DEVELOPMENT, JACKYJ</p>
             </Menu>

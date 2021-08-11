@@ -68,10 +68,10 @@ const SideBar = (props) => {
                 <div className="horizontalLine" style={{top: '80vh'}} />
                 <div className="bottomMenu">
                     <div className="bottomLinks">
-                        <a href="https://www.behance.net/patriciaro63c0/" target="_blank">BE</a>
                         <a href="https://www.instagram.com/trishroque_/" target="_blank">IN</a>
+                        <a href="https://www.are.na/trish-roque/" target="_blank">AR</a>
                         <a href="https://twitter.com/trishroque__" target="_blank">TW</a>
-                        <a href="https://www.youtube.com/user/haipatron" target="_blank">YT</a>
+                        <a href="https://www.behance.net/patriciaro63c0/" target="_blank">BE</a>
                     </div>
                 </div>
             </div>
