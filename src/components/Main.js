@@ -30,7 +30,7 @@ const useAnimationFrame = (callback) => {
 const Main = () => {
     const maxMenuScroll = (window.innerWidth)/(window.innerHeight/100)
     const menuScrollCheck = 26
-    const rowWidth = -500
+    const rowWidth = -570
     const maxHorizontalScroll = (rowWidth + 5*menuScrollCheck)
 
     const [horizontalScroll, setHorizontalScroll] = useState(0)

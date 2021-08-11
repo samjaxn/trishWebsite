@@ -9,6 +9,9 @@ import equinox from '../content/equinox.gif'
 import momentum from '../content/momentum.gif'
 import nobis from '../content/nobis.mp4'
 import raptors from '../content/raptors.mp4'
+import nuit from '../content/nuitBlanche.gif'
+import gathering from '../content/theGathering.mp4'
+import nike from '../content/nikeAMD.png'
 
 //change the scroll to have the elements move to the left rather than the current way
 //or find a way to keep current scroll and the incorporate the new div to change the scrolling type when its fully in view
@@ -23,23 +26,27 @@ const WorkMenu = (props) => {
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work number='01' name={'ACRONYM'} video={acronym} scrolling={props.scrolling}/>
                 <Work number='02' name={'BROKEN\nHEARTS\nGALLERY'} picture={brokenHearts} scrolling={props.scrolling}/>
-                <Work number='03' name={'DANIELA\nANDRADE\n- KLFG'} video={danielaKLFG} scrolling={props.scrolling}/>
+                <Work number='03' name={'NUIT\nBLANCE'} picture={nuit} scrolling={props.scrolling}/>
                 <Work number='04' name={'DANIELA\nANDRADE\n- $$$'} video={danielaDollars} scrolling={props.scrolling}/>
                 <Work number='05' name={'EQUINOX'} picture={equinox} scrolling={props.scrolling}/>
                 <Work number='06' name={'MOMENTUM'} picture={momentum} scrolling={props.scrolling}/>
                 <Work number='07' name={'NOBIS'} video={nobis} scrolling={props.scrolling}/>
                 <Work number='08' name={'RAPTORS'} video={raptors} scrolling={props.scrolling}/>
+                <Work number='09' name={'THE\nGATHERING'} video={gathering} scrolling={props.scrolling}/>
+                <Work number='10' name={'NIKE\nAMD'} picture={nike} scrolling={props.scrolling}/>
             </div>
             <div className='workRow bottomRow' style={{display: 'inline-flex', left: `${props.scroll}vh`}}>
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work number='01' name={'ACRONYM'} video={acronym} scrolling={props.scrolling}/>
                 <Work number='02' name={'BROKEN\nHEARTS\nGALLERY'} picture={brokenHearts} scrolling={props.scrolling}/>
-                <Work number='03' name={'DANIELA\nANDRADE\n- KLFG'} video={danielaKLFG} scrolling={props.scrolling}/>
+                <Work number='03' name={'NUIT\nBLANCE'} picture={nuit} scrolling={props.scrolling}/>
                 <Work number='04' name={'DANIELA\nANDRADE\n- $$$'} video={danielaDollars} scrolling={props.scrolling}/>
                 <Work number='05' name={'EQUINOX'} picture={equinox} scrolling={props.scrolling}/>
                 <Work number='06' name={'MOMENTUM'} picture={momentum} scrolling={props.scrolling}/>
                 <Work number='07' name={'NOBIS'} video={nobis} scrolling={props.scrolling}/>
                 <Work number='08' name={'RAPTORS'} video={raptors} scrolling={props.scrolling}/>
+                <Work number='09' name={'THE\nGATHERING'} video={gathering} scrolling={props.scrolling}/>
+                <Work number='10' name={'NIKE\nAMD'} picture={nike} scrolling={props.scrolling}/>
             </div>
         </div>
     )
