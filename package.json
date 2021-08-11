@@ -1,7 +1,8 @@
 {
   "name": "trish-website",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://samjaxn.github.io/trishWebsite/",
+  "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@testing-library/jest-dom": "^4.2.4",
@@ -21,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "postcss-normalize": "^8.0.1"
   }
 }
