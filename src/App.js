@@ -1,6 +1,8 @@
 import React from 'react';
 import Main from './components/Main'
+import 'normalize.css';
 import './App.css';
+
 
 function App() {
   return (

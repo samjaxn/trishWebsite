@@ -1,3 +1,5 @@
+@import-normalize;
+
 @font-face {
   font-family: 'GeneraleStation';
   src: url("./fonts/GeneraleStation-Extended.otf");
@@ -42,6 +44,7 @@ body {
   -webkit-overflow-scrolling: touch;
   background-color: #020202;
   overflow: hidden;
+  touch-action: none;
 }
 
 code {

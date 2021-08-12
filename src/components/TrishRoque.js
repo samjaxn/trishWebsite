@@ -1,9 +1,32 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
+import anime from 'animejs/lib/anime.es'
 import arrow from '../SVGs/arrow.svg'
 
-const TrishRoque = () => {
+const TrishRoque = (props) => {
+    const trishRef = useRef()
+
+    useEffect(() => {
+        if(!props.showAbout){
+            startUpAnimation()
+        }
+        else{
+
+        }
+    }, [props.showAbout])
+
+    const startUpAnimation = () => {
+        anime({
+            targets: trishRef.current,
+            translateX: ['40vh', '0vh'],
+            opacity: ['0', '1'],
+            easing: 'easeInOutExpo',
+            duration: 3000,
+            delay: 1500
+        })
+    }
+    
     return (
-            <div className="trishRoque">
+            <div className="trishRoque" ref={trishRef}>
                 <div style={{display: 'inline-block', width: '100%'}}>
                     <div className="tinyText" style={{float: 'left'}}>
                         scroll to explore

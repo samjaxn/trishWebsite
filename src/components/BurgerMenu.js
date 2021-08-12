@@ -20,14 +20,14 @@ const BurgerMenu = (props) => {
             customCrossIcon={ <img src={crossIcon} /> }
             width={'100vw'}
             {...props}>
-                <p className="menu-item menuLabel">
+                <p className="menu-item menuLabel" onClick={props.workClick}>
                     WORK
                 </p>
-                <p className="menu-item menuLabel">
+                <p className="menu-item menuLabel" onClick={props.aboutClick}>
                     ABOUT
                 </p>
-                <p className="menu-item menuLabel">
-                    STORE
+                <p className="menu-item menuLabel" onClick={props.storeClick}>
+                    SHOP
                 </p>
                 <p className="sideMenuFooter">DESIGN,TRISH ROQUE DEVELOPMENT, JACKYJ</p>
             </Menu>
