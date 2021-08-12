@@ -25,12 +25,15 @@ const Work = (props) => {
         //console.log(imageOpacity)
         if(imageClicked === true){
             mouseLeave(e)
-            
         }
         else{
             mouseOver(e)
         }
         setImageClick(!imageClicked)
+        if(props.link){
+            console.log(props.link)
+            window.open(props.link, "_blank")
+        }
     }
 
     useLayoutEffect(() => {
@@ -51,7 +54,7 @@ const Work = (props) => {
                 </div>
                 <img src={arrow} className="arrow" style={{paddingLeft: '0.5vh'}}/>
             </div>
-            <div className="workElemTitle" onMouseMove={mouseOver} onMouseLeave={mouseLeave} onMouseUp={onClick}> 
+            <div className="workElemTitle" onMouseMove={mouseOver} onMouseLeave={mouseLeave} onMouseUp={onClick}>
                 {props.name}
             </div>
         </div>

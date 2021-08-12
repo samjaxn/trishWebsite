@@ -26,7 +26,7 @@ const WorkMenu = (props) => {
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work number='01' name={'ACRONYM'} video={acronym} scrolling={props.scrolling}/>
                 <Work number='02' name={'BROKEN\nHEARTS\nGALLERY'} picture={brokenHearts} scrolling={props.scrolling}/>
-                <Work number='03' name={'NUIT\nBLANCE'} picture={nuit} scrolling={props.scrolling}/>
+                <Work number='03' name={'NUIT\nBLANCHE'} picture={nuit} scrolling={props.scrolling}/>
                 <Work number='04' name={'DANIELA\nANDRADE\n- $$$'} video={danielaDollars} scrolling={props.scrolling}/>
                 <Work number='05' name={'EQUINOX'} picture={equinox} scrolling={props.scrolling}/>
                 <Work number='06' name={'MOMENTUM'} picture={momentum} scrolling={props.scrolling}/>
@@ -39,7 +39,7 @@ const WorkMenu = (props) => {
                 {/* <Work name='RAPTORS' picture={photo} number='01'/> */}
                 <Work number='01' name={'ACRONYM'} video={acronym} scrolling={props.scrolling}/>
                 <Work number='02' name={'BROKEN\nHEARTS\nGALLERY'} picture={brokenHearts} scrolling={props.scrolling}/>
-                <Work number='03' name={'NUIT\nBLANCE'} picture={nuit} scrolling={props.scrolling}/>
+                <Work number='03' name={'NUIT\nBLANCHE'} picture={nuit} scrolling={props.scrolling}/>
                 <Work number='04' name={'DANIELA\nANDRADE\n- $$$'} video={danielaDollars} scrolling={props.scrolling}/>
                 <Work number='05' name={'EQUINOX'} picture={equinox} scrolling={props.scrolling}/>
                 <Work number='06' name={'MOMENTUM'} picture={momentum} scrolling={props.scrolling}/>
