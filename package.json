@@ -1,7 +1,7 @@
 {
   "name": "trish-website",
   "version": "0.1.0",
-  "homepage": "https://samjaxn.github.io/trishWebsite/",
+  "homepage": "http://trishroque.co/",
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.9.10",
